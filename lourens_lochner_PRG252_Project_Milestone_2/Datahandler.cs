@@ -187,6 +187,30 @@ namespace lourens_lochner_PRG252_Project_Milestone_2
             }
         }
 
+        public void DeleteAllModules(int id)
+        {
+            try
+            {
+
+                con.Open();
+                System.Windows.Forms.MessageBox.Show("Connection Opened");
+                SqlCommand cmd = new SqlCommand($"DELETE FROM  Modules  WHERE StudentNumber = '{id}'", con);
+                cmd.ExecuteNonQuery();
+                System.Windows.Forms.MessageBox.Show("All student Modules removed");
+
+            }
+            catch (Exception x)
+            {
+                System.Windows.Forms.MessageBox.Show(x.Message);
+            }
+
+            finally
+
+            {
+                con.Close();
+            }
+        }
+
 
 
         public DataTable SearchModule(int id)

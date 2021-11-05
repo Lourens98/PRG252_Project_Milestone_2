@@ -46,6 +46,7 @@ namespace lourens_lochner_PRG252_Project_Milestone_2
             int nmbr = int.Parse(deleteS.Text);
 
             dh.DeleteStudent(nmbr);
+            dh.DeleteAllModules(nmbr);
 
             allStudents.DataSource = null;
             source.DataSource = dh.ViewAll();

@@ -98,6 +98,7 @@ namespace lourens_lochner_PRG252_Project_Milestone_2
             this.toLog.TabIndex = 44;
             this.toLog.Text = "To Login";
             this.toLog.UseVisualStyleBackColor = true;
+            this.toLog.Click += new System.EventHandler(this.toLog_Click);
             // 
             // toPort
             // 

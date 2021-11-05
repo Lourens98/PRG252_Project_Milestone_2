@@ -158,5 +158,12 @@ namespace lourens_lochner_PRG252_Project_Milestone_2
         {
 
         }
+
+        private void toLog_Click(object sender, EventArgs e)
+        {
+            Login l = new Login();
+            l.Show();
+            this.Hide();
+        }
     }
 }
